@@ -1,8 +1,8 @@
 <div class="container-fluid">
 	<div class="row-fluid text-center">
 		<div class="well span12 video-container" style="float: none; margin: 0 auto;">
-			<video id="Video1" class="video"
-				ng-src="{{selectedVideo.src}}" type="video/mp4" controls kv-player></video>
+			<div id="Video1" class="video"
+				ng-src="{{selectedVideo.src}}" type="video/mp4" controls kv-player></div>
 			<p>{{selectedVideo.src}}</p>
 			<h6>{{selectedVideo.title}} <span class="label label-info">{{playbackTime | timeFilter}}</span></h6>
 		</div>

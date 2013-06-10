@@ -20,18 +20,16 @@ angular.module('knowledgevisionHtml5PlaylistappApp')
       $rootScope.$broadcast('timeUpdated');
     },
     getPlaybackTime: function() {
-      return angular.copy(playbackTime);
+      return playbackTime;
     },
     getVideoStartTime: function() {
       return angular.copy(startTime);
     },
     setVideoElement: function(videoElm) {
       videoElement = videoElm;
-      videoElement.addEventListener('playing', function() {
-      });
     },
     on: function(eventName, callBack) {
-      videoElement.addEventListener(eventName, function() {
+      videoElement.on(eventName, function() {
         var args = arguments;
         $rootScope.$apply(function() {
           callBack.apply(videoElement, args);

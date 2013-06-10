@@ -1,13 +1,15 @@
 @import "compass_twitter_bootstrap";
 
-video {
+.video {
   width: 100%    !important;
-  height: auto   !important;
+  height: 500px;
 }
+
 .video-container {
 	margin: 0;
 	display: block;
 	text-align: center;
+	min-height: 500px;
 }
 .video-list {
 	list-style:none;
